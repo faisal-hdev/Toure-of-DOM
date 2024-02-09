@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <style>
       li {
-        color: lightseagreen;
+        color: black;
       }
 
       #fruits-title {
@@ -28,8 +28,8 @@
         Veniam velit provident tempore eos placeat, tenetur dolorem quia!
       </p>
     </header>
-    <main>
-      <section>
+    <main id="main-container">
+      <section class="music-container">
         <h1>My Awesome Dom re baba</h1>
         <ul>
           <li>Jalali set</li>
@@ -47,9 +47,9 @@
           <li>mango</li>
         </ul>
       </section>
-      <section>
+      <section class="large-text" id="places-container">
         <h1 id="places-title">Places i like to visit</h1>
-        <ul>
+        <ul id="places-list">
           <li class="important-places">SundorBan</li>
           <li class="important-places">BanderBan</li>
           <li class="important-places">KuataBan</li>
@@ -59,6 +59,8 @@
     </main>
 
     <script src="./js/dom.js"></script>
+    <script src="./js/appendChaild.js"></script>
+    <script src="./js/styleIn.js"></script>
     <script>
       // option : 01 getElementByTagName
       const liCollection = document.getElementsByTagName("li");
@@ -85,12 +87,12 @@
 
       // option : 04 querySelector
       const fruitsLi = document.querySelector(".fruits-container li");
-      console.log(fruitsLi.innerText);
+      //   console.log(fruitsLi.innerText);
       // option : 05 querySelectorAll
       const fruitsLi2 = document.querySelectorAll(".fruits-container li");
       //   console.log(fruitsLi);
       for (const li of fruitsLi2) {
-        console.log(li.innerText);
+        // console.log(li.innerText);
       }
     </script>
   </body>
