@@ -28,3 +28,6 @@ section1.innerHTML = `
 `;
 
 mainContainer.appendChild(section1);
+
+
+document.getElementById
